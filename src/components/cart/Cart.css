@@ -1,0 +1,15 @@
+/* variable */
+:root{ 
+    --cart-white-width: 0;
+}
+
+.cart-items::after{
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: -1px;
+    right: 0;
+    height: 1px;
+    background: white;
+    width: var(--cart-white-width);
+}
